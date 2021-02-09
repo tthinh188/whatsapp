@@ -1,4 +1,4 @@
-##Full stack web chat message app
+Full stack web chat message app
 
 Front-end React
 
