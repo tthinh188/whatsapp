@@ -1,0 +1,3 @@
+admin
+zAevEq4JofonF2V9
+mongodb+srv://admin:<password>@cluster0.thgp8.mongodb.net/<dbname>?retryWrites=true&w=majority

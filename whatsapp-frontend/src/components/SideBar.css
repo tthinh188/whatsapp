@@ -1,0 +1,87 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 0.35;
+}
+
+.sidebar .sidebar_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-right: 1px solid lightgray;
+    align-items: center;
+}
+
+.sidebar .sidebar_header .avatar:hover {
+    cursor: pointer;
+    color: lime;
+    border: 1px solid lime;
+}
+
+.sidebar .sidebar_header p {
+    cursor: pointer;
+}
+
+.sidebar .sidebar_header p {
+    margin-right: auto;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.sidebar .sidebar_headerRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 10vw;
+}
+
+.sidebar_headerRight > .MuiSvgIcon-root {
+    margin-right: 2vw;
+    font-size: 24px !important;
+}
+
+.sidebar_search {
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    height: 39px;
+    padding: 10px;
+}
+
+.sidebar_searchContainer {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+}
+
+.sidebar_searchContainer > .MuiSvgIcon-root{
+    color: gray;
+    padding: 10px;
+}
+
+.sidebar_searchContainer input {
+    border: none;
+    outline-width: 0;
+    margin-left: 10px;
+}
+
+.sidebar_rooms {
+    flex: 1;
+    background-color: white;
+    overflow: scroll;
+}
+
+.sidebar_rooms .addChatRoom {
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    flex: 1;
+}
+
+.sidebar_rooms .addChatRoom:hover {
+    background-color: #ebebeb;
+    transform: scale(1.02);
+}
