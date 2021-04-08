@@ -4,7 +4,13 @@ import mongoose from 'mongoose';
 import Messages from './dbMessages.js';
 import Pusher from 'pusher';
 import Cors from 'cors';
+import { createRequire } from 'module';
+
 // app config
+
+const require = createRequire(import.meta.url);
+require('dotenv').config();
+
 const app = express();
 const port = process.env.PORT || 9000;
 
@@ -22,7 +28,7 @@ app.use(express.json());
 app.use(Cors());
 
 // Db config
-const connection_URL = 'mongodb+srv://admin:zAevEq4JofonF2V9@cluster0.thgp8.mongodb.net/whatsappdb?retryWrites=true&w=majority'
+const connection_URL = process.env.CONNECTION_URL;
 
 mongoose.connect(connection_URL, {
     useCreateIndex: true,

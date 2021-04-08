@@ -55,7 +55,7 @@ function Chat({messages}) {
                 </span>
             </p>
 
-            <p className="chat_message sender">
+            <p className="chat_message">
                 <span className="userName">Thinh Phan</span>
                 Hello idol !!!
                 <span className="chat_timestamp">
@@ -64,7 +64,7 @@ function Chat({messages}) {
             </p>
 
             {messages.map(message => (
-                <p className={`chat_message ${message.sender && "sender"}`}>
+                <p className={`chat_message ${message.name === "Demo" && "sender"}`}>
                 <span className="userName">{message.name}</span>
                 {message.message}
                 <span className="chat_timestamp">
